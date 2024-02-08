@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adrian Anin Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    
+    <div class="main">
+      <div class="header">
+        <p>Hello 👋 I'm</p>
+        <div class="animation">
+          <div class="first"><div>Adrian Anin</div></div>
+          <div class="second"><div>Web Developer</div></div>
+          <div class="third"><div>Software Engineer</div></div>
+        </div>
+      </div>
+       <div class="container">
+      
+      <div class="box">
+            
+
+        <span style="--i: 1" class=""><img src="Screenshot (90).png" class="display-img" /></span>
+        <span style="--i: 2"><a href="https://react-cv-generator.vercel.app/" target="_blank"><img src="Screenshot (91).png" class="display-img"  /></a></span>
+        <span style="--i: 3"><a href="https://react-shopping-cart-adriananin.vercel.app/" target="_blank"><img src="Screenshot (92).png" class="display-img" /></a></span>
+        <span style="--i: 4"><a href="https://memoji-rho.vercel.app/" target="_blank"><img src="Screenshot (93).png" class="display-img" /></a></span>
+        <span style="--i: 5"><a href="https://adriananin.github.io/weather-app/" target="_blank"><img src="Screenshot (94).png" class="display-img" /></a></span>
+        <span style="--i: 6"><img src="Screenshot (95).png" class="display-img" /></span>
+        <!--<span style="--i: 7"><img src="./images/seventh.png" /></span>-->
+        <span style="--i: 8"><img src="ekow.jpg" class="display-img" /></span>
+        <!-- {# <span>♫</span> #} this is still in because I accidentally did it and I don't know how to do it again and yes I can just google it but I don't want to-->
+      </div>
+
+      <div class="btns">
+        <div class="btn prev"></div>
+        <div class="btn next"></div>
+      </div>
+    </div>
+    </div>
+   
+
+    <script>
+      let prev = document.querySelector(".prev");
+      let next = document.querySelector(".next");
+      let box = document.querySelector(".box");
+
+      let degrees = 0;
+
+
+      prev.addEventListener("click", () => {
+        degrees += 45;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+      });
+      next.addEventListener("click", () => {
+        degrees -= 45;
+        box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+      });
+    </script>
+  </body>
+</html>
